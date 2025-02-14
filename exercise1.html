@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 Exercise 1</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+
+            // Variable Declaration
+            let x = 15;
+            const y = 75;
+            let z = 93;
+            x = 14;
+            console.log(x) // The value of x can be reassigned, and when you print x its prints the new value
+            /**y = 14;*/
+            console.log(y) // The value of y cannot be reassigned because it is a const variable. It gives a TypeError
+            
+
+            // String Operations
+            let string1 = "Hello, World!"
+            let string2 = "JavaScript is fun!"
+            console.log(`Length of string1 is ${string1.length}`)
+
+            let str1andstr2 = string1+string2;
+            console.log(str1andstr2)
+
+            newString2 = string2.replace("fun", "awesome");
+            console.log(newString2)
+            // String Templates
+
+            let name = "Alice"
+            let age = 25;
+
+            let introduction = `My name is ${name} and I am ${age} years old`;
+            console.log(introduction)
+
+            // Working with Dates
+            
+            const currentDate = new Date()
+            console.log(currentDate)
+            console.log(currentDate.getFullYear())
+            console.log(currentDate.getMonth())
+            console.log(currentDate.getDay())
+            const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+            console.log(daysOfWeek[currentDate.getDay() - 1])
+        </script>
+    </body>
+
+
+
+
+
+</html>
