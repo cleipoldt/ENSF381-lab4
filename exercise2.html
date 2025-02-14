@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 4 - Exercise 2</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            //Declaring Functions
+            /*
+            function add (number1, number2) {
+                console.log(number1 + number2);
+            }
+
+            function subtract (number1, number2) {
+                console.log(number1 - number2);
+            }
+
+            add(14,3)
+            subtract(52,3)
+            */
+
+            //Using Default Parameters
+            /*
+            function add (number1, number2 = 0) {
+                console.log(number1 + number2);
+            }
+
+            function subtract (number1, number2 = 0) {
+                console.log(number1 - number2);
+            }
+            
+            add(1)
+            add(1,2)
+            subtract(2)
+            subtract(2,3)
+            */
+
+            //Implementing Arrow Functions
+            let add = (number1, number2) => {
+                console.log(number1 + number2);
+            }
+
+            let subtract = (number1, number2) => {
+                console.log(number1 - number2);
+            }
+
+            let multiply = (number1, number2) => {
+                console.log(number1*number2);
+            }
+
+            let divide = (number1, number2) => {
+                if (number2 == 0) {
+                    console.log('DivisionByZeroError');
+                }
+                else
+                    console.log(number1/number2);
+            }
+            /*
+            userInput1 = prompt('Please enter your first number:');
+            userInput2 = prompt('Please enter your second number:');
+            */
+
+            add(1, 2);
+            subtract(1,2);
+            multiply(1,2);
+            divide(1,2);
+            divide(3,0);
+
+            //Understanding Callback Functions
+            function calculator (number1, number2, callback) {
+                callback(number1, number2);
+            }
+
+            calculator(1, 2, add);
+            calculator(1, 2, subtract);
+            calculator(1, 2, multiply);
+            calculator(1, 2, divide);
+        
+        </script>
+    </body>
+</html>
